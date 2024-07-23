@@ -1,0 +1,102 @@
+@charset "UTF-8" ;
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+AR:wght@100..400&display=swap');
+
+:root { 
+    --fonte001: Arial, Helvetica, sans-serif;
+    --fonte002: "Edu AU VIC WA NT Hand", cursive;
+    --fonte003: "Playwrite AR", cursive;
+}
+    
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, main {
+    font-family: var(--fonte001)
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    
+}
+
+header > h1 {
+    font-family: var(--fonte003);
+    padding-top: 50px;
+    font-size: 5vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte002);
+    line-height: 5vh;
+}
+
+section > p {
+    margin: 5vh;
+}
+
+section.imagem {
+background-color: black;
+padding-top: 1vh;
+padding-bottom: 1vh;
+background-position: right, left;
+background-attachment: fixed;
+background-size: cover;
+box-shadow: inset 1px 1px 6px 0px rgba(0, 0, 0, 0.619);
+}
+
+section.normal {
+    font-size: 3vw;
+    display: inline-block;
+    line-height: 170%;
+    padding-left: 4%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    
+}
+
+section.imagem > p {
+    font-size: 3vw;
+    line-height: 170%;
+    background-color: rgba(21, 21, 21, 0.551);
+    color: white;
+    display: inline-block;
+    padding: 4.5vw;
+}
+
+section#img001 {
+background-image: url(../background001.jpg);
+}
+
+section#img002 {
+background-image: url(../background002.jpg);
+
+}
+footer {
+    font-family: var(--fonte001);
+    background-color: black;
+    font-size: small;
+    color: white;
+    padding: 7px;
+    text-align: center;
+}
